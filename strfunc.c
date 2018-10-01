@@ -1,9 +1,24 @@
-char * strncat( char *dest, char *source, int n){
-  int x = n;
-  int i = 0;
-  while (!n){
-    dest[strlen(dest) + i] = *(source + i);
+int mystrlen( char *s){
+  int ans = 0;
+  while(*s){
+    ans++;
+    s++;
   }
-  dest[strlen(dest) + i + 1] = '\0';
-  return dest;
+  return ans;
+}
+
+char * mystrncat( char *dest, char *source, int n){
+  char* ans = dest;
+  int x = n;
+  while(*dest)
+    dest++;
+  while(x){
+    *dest = *source;
+    dest++;
+    source++;
+    x--;
+  }
+  dest++;
+  *dest = 0;
+  return ans;
 }
