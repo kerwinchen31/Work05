@@ -45,3 +45,13 @@ int mystrcmp( char *s1, char *s2 ){
   }
   return ans;
 }
+
+char * mystrchr( char *s, char c ){
+  while(*s){
+    if(*s == c){
+      return s;
+    }
+    *s++;
+  }
+  return;
+}

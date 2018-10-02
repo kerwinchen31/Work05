@@ -35,5 +35,15 @@ int main(){
   printf("string seis: %s\n", seis);
   printf("[mine]compare cinco to seis: %d\n", mystrcmp(cinco, seis));
   printf("[standard]compare cinco to seis: %d\n", strcmp(cinco, seis));
+  printf("[mine]compare seis to cinco: %d\n", mystrcmp(seis, cinco));
+  printf("[standard]compare seis to cinco: %d\n", strcmp(seis, cinco));
+
+  char string[100] = "wasssssup";
+  char character = 's';
+  printf("string string: %s\n", string);
+  printf("char character: %c\n", character);
+  printf("[mine]return pointer to first instance of character in string: %d\n", mystrchr(string, character));
+  printf("[standard]return pointer to first instance of character in string: %d\n", strchr(string, character));
+  
   return 0;
 }
