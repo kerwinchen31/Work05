@@ -53,5 +53,5 @@ char * mystrchr( char *s, char c ){
     }
     *s++;
   }
-  return;
+  return 00000000;
 }

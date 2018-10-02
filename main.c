@@ -42,8 +42,8 @@ int main(){
   char character = 's';
   printf("string string: %s\n", string);
   printf("char character: %c\n", character);
-  printf("[mine]return pointer to first instance of character in string: %d\n", mystrchr(string, character));
-  printf("[standard]return pointer to first instance of character in string: %d\n", strchr(string, character));
-  
+  printf("[mine]return pointer to first instance of character in string: %s\n", mystrchr(string, character));
+  printf("[standard]return pointer to first instance of character in string: %s\n", strchr(string, character));
+
   return 0;
 }
